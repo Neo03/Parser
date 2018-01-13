@@ -2,7 +2,7 @@
 
 module TextFractions where
 
-import Data.Ratio((%))
+import Data.Ratio((%), Ratio(..))
 import Control.Applicative
 import Text.Trifecta
 

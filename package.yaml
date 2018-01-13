@@ -24,6 +24,11 @@ dependencies:
 - trifecta
 - polyparse
 - raw-strings-qq
+- parsers
+- bytestring
+- containers
+- text
+- hspec
 
 library:
   source-dirs: src

@@ -19,8 +19,7 @@ eitherOr = [r|
 123
 abc
 456
-def
-|]
+def|]
 
 parseNos :: Parser NumberOrString
-parseNos = (Left <$> integer) <|> (Right <$> some letter)
+parseNos = skipMany (oneOf "\n") >> (Left <$> integer) <|> (Right <$> some letter)
