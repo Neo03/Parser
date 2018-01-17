@@ -22,7 +22,7 @@ newtype Header = Header String deriving (Eq, Ord, Show)
 assingmentEx :: ByteString
 assingmentEx = "woot=1"
 
-skipComment :: ByteString 
+skipComment :: ByteString
 skipComment = "; woot\n[blah]"
 
 
@@ -115,3 +115,8 @@ parseIni = do
 maybeSuccess :: Result a -> Maybe a
 maybeSuccess (Success a) = Just a
 maybeSuccess _           = Nothing
+
+p' :: Parser [Integer]
+p' = some $ do
+  i <- token (some digit)
+  return (read i)

@@ -1,10 +1,11 @@
-{--# OverloadedStrings #--}
+{-# LANGUAGE OverloadedStrings #-}
 
 module TextFractions where
 
 import Data.Ratio((%), Ratio(..))
 import Control.Applicative
 import Text.Trifecta
+
 
 badFraction = "1/0"
 alsoBad = "10"

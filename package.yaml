@@ -29,6 +29,8 @@ dependencies:
 - containers
 - text
 - hspec
+- attoparsec
+- parsec
 
 library:
   source-dirs: src
